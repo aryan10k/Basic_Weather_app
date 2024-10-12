@@ -1,11 +1,11 @@
-const apikey = 'b19a046563f4ecfc916e311361be1158';
+const APIKEY;
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
 const url = (city) =>
-  `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+  `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`;
 
 async function getWeatherByLocation(city) {
   try {
